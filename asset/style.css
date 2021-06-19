@@ -1,7 +1,47 @@
 #Table{
     border: solid 1px black;
     border-collapse: collapse;
+    text-align: center;
 }
 #Table td{
     border: solid 1px black;
+}
+#Table > thead td:first-child{
+background-color: #7887ab;
+color: white;
+font-weight: bold;
+}
+#Table > thead td:nth-child(2){
+  background-color: #4f628e;  
+  color: white;
+}
+#Table > thead td:nth-child(3){
+ background-color: #2e4172; 
+ color: white;
+}
+#Table > thead td:nth-child(4){
+  background-color: #162955;
+  color: white;  
+}
+#Table > thead td:last-child{
+   background-color: #061539;
+   color: white;
+}
+ #Table > tbody tr:nth-child(odd) td:nth-child(odd) {
+	background: #dbdbdb;
+}
+#Table > tbody tr:nth-child(odd) td:nth-child(even) {
+	background: #e7e7e7;
+}
+#Table > tbody tr:nth-child(even) td:nth-child(odd) {
+	background: #e7e7e7;
+}
+#Table > tbody tr:nth-child(even) td:nth-child(even) {
+	background: #f3f3f3;
+}
+#Table > tfoot tr:nth-child(odd) td:nth-child(odd) {
+	background: #dbdbdb;
+}
+#Table > tfoot tr:nth-child(odd) td:nth-child(even) {
+	background: #e7e7e7;
 }
